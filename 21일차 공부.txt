@@ -1,0 +1,30 @@
+라이브러리
+-함수를 모아 놓은 것
+
+프레임워크
+-사용법과 순서, 설정
+
+
+<dependency>
+    <groupId>junit</groupId>
+    <artifactId>junit</artifactId>  프로그램 이름
+    <version>4.12</version>  버전
+    <scope>test</scope>  테스트 용도
+</dependency>
+의존 -> 뭔가 사용한다.
+junit -> hamcrest필요
+
+
+ehcache2 <- 이건 뭐지???
+
+192.168.0.1 공유기 주소
+
+포트포워딩
+
+192.168.0.160:8087
+
+MVC : 프론트와 백이 밀접한 관계
+
+REST : 프론트 따로, 백 따로
+
+CORS : crossorign이 빠지면 오류 뜸. -> 좀더 자세히 알아보자
