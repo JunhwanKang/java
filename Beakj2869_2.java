@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
 
-public class Beakj2869 {
+public class Beakj2869_2 {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
@@ -15,12 +15,11 @@ public class Beakj2869 {
 		int a = Integer.parseInt(st.nextToken());
 		int b = Integer.parseInt(st.nextToken());
 		int v = Integer.parseInt(st.nextToken());
-		int c = 0;
-		int result = (v-a)/(a-b);
-		if((v-a)%(a-b)==0)
-			bw.write(result+1+"\n");
-		else
-			bw.write(result+2+"\n");
+		
+		int result = (v-b)/(a-b);
+		if((v-b)%(a-b)!=0)
+			result++;
+		bw.write(result+"\n");
 		bw.close();
 	}
 }
